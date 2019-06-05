@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Buổi 3 - HTMl 5</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <!-- Quy tắc BEM:
+  B : Block 
+  E : Element -- Block__Element
+  M : Modify -- Block--Mofify -->
+  <header class="header">
+    <div class="header__content">
+      <h1 class="header__title">BAKE</h1>
+      <ul class="header__menu">
+        <li class="active"><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">SERVICE</a></li>
+        <li><a href="">GALLERY</a></li>
+        <li><a href="">CLIENTS</a></li>
+        <li><a href="">CONTACTS</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- cover -->
+  <section class="cover">
+    <div class="cover__content">
+      <h1 class="cover__title">Best Bake Here</h1>
+      <p>Donec at massa nec sem eleifend fermentum.</p>
+      <button class="btn">LEARN MORE</button>
+    </div>
+  </section>
+
+  <!-- intro -->
+  <section class="intro">
+    <!-- row-1 -->
+    <div class="tradition text__intro">
+      <div class="text__content">
+        <h1>Tradition</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe rerum placeat quasi dolorum exercitationem
+          accusantium.</p>
+      </div>
+    </div>
+    <div class="image">
+      <img src="./img/ab1.jpg" alt="" />
+    </div>
+    <div class="creativity text__intro">
+      <div class="text__content">
+        <h1>Creativity</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe rerum placeat quasi dolorum exercitationem
+          accusantium.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- static -->
+  <section class="static">
+    <div class="static__content">
+      <div class="item">
+        <h1 class="counter">3500</h1>
+        <p>Coffee</p>
+      </div>
+      <div class="item">
+        <h1 class="counter">650</h1>
+        <p>Happy Client</p>
+      </div>
+      <div class="item">
+        <h1 class="counter">10</h1>
+        <p>Experience</p>
+      </div>
+      <div class="item">
+        <h1 class="counter">1010</h1>
+        <p>Expert Worker</p>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="./js/jquery.countup.min.js"></script>
+  <script>
+    $('.counter').countUp();
+  </script>
+</body>
+
+</html>
